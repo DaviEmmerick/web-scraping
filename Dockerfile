@@ -10,4 +10,4 @@ RUN pip install -r requirements.txt
 
 EXPOSE 8080
 
-CMD ["python", "scraper.py"]
+CMD ["python", "app/scraping/scraper.py"]
