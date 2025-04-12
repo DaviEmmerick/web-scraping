@@ -1,8 +1,13 @@
-FROM python:3.10-slim
+FROM python:3.9-slim
 
 WORKDIR /app
 
-COPY scraping/ /app
-RUN pip install --no-cache-dir -r requirements.txt
+COPY . /app
+
+RUN ls -la /app
+
+RUN pip install -r requirements.txt
+
+EXPOSE 8080
 
 CMD ["python", "scraper.py"]
