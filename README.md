@@ -61,6 +61,7 @@ docker-compose up --build
 
 -> Provavelmente eu vou tentar automatizar esse processe de alguma forma diferente, talvez com Prefect ou Airflow. 
 -> Caso eu faça isso, vou migrar o banco de dados para o PostgreSQL.
+-> Migrar para um serviço AWS, no momento eu vou fazer o deploy em alguma nuvem gratuita como o Render/Replit.
 
 # 📄 Liçenca
 
