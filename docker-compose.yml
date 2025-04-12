@@ -1,9 +1,13 @@
-#version: '3.8' -> Não é mais essencial definir a versão do Docker
-
 services:
   scraper:
     build: .
     volumes:
-      - ./scraping:/app  
-      - ./scraping/news.db:/app/news.db  
-      - ./data:/app/data  
+      - ./app/scraping:/app/scraping       
+      - ./app/data:/app/data               
+      - ./app/templates:/app/templates    
+      - ./app/static:/app/static           
+    ports:
+      - "8080:8080"
+    environment:
+      - FLASK_ENV=development
+    command: python app/scraping/scraper.py
