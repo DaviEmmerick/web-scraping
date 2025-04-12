@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: web-scraping
+    runtime: python
+    buildCommand: ""
+    startCommand: gunicorn app.app:app
