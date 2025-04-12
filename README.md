@@ -1,6 +1,6 @@
 # 📌 Web Scraping com Python
 
-Este projeto é um scraper em Python que coleta notícias do site G1 Globo e armazena os dados extraídos em um banco de dados SQLite. O script utiliza a biblioteca BeautifulSoup para fazer o parsing do HTML da página, a biblioteca requests para realizar as requisições HTTP e sqlite3 para interagir com o banco de dados local.
+Este projeto é um scraper em Python que coleta notícias do site GE e armazena os dados extraídos em um banco de dados SQLite. O script utiliza a biblioteca BeautifulSoup para fazer o parsing do HTML da página, a biblioteca requests para realizar as requisições HTTP e sqlite3 para interagir com o banco de dados local.
 
 O scraper extrai os seguintes dados das notícias:
 
