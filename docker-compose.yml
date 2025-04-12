@@ -1,0 +1,9 @@
+#version: '3.8' -> Não é mais essencial definir a versão do Docker
+
+services:
+  scraper:
+    build: .
+    volumes:
+      - ./scraping:/app  
+      - ./scraping/news.db:/app/news.db  
+      - ./data:/app/data  
